@@ -58,6 +58,8 @@ img, svg { display: block; max-width: 100%; }
   background: currentColor; transition: width .3s;
 }
 .nav a:hover::after, .nav a.active::after { width: 100%; }
+.nav { margin-left: auto; }
+.menu-toggle { margin-left: auto; }
 .menu-toggle { display: none; background: none; border: 0; width: 36px; height: 36px; position: relative; cursor: pointer; }
 .menu-toggle span { position: absolute; left: 6px; right: 6px; height: 2px; background: #fff; transition: transform .3s, top .3s; }
 .menu-toggle span:first-child { top: 13px; }
@@ -275,7 +277,10 @@ img, svg { display: block; max-width: 100%; }
 
 /* Responsive */
 @media (max-width: 860px) {
-  .menu-toggle { display: block; }
+  .menu-toggle { 
+    position: relative;       /* required, or z-index does nothing */
+    z-index: 2;               /* button sits above the overlay */
+    display: block; }
   .nav {
     position: fixed; inset: 0; background: var(--ink); mix-blend-mode: normal;
     flex-direction: column; justify-content: center; align-items: flex-start;
@@ -283,7 +288,9 @@ img, svg { display: block; max-width: 100%; }
     transform: translateY(-100%); transition: transform .4s;
   }
   .nav.open { transform: none; }
-  .site-header { z-index: 60; }
+  .site-header { 
+    mix-blend-mode: normal;
+    z-index: 60; }
   .hero { grid-template-columns: 1fr; padding-top: 6rem; }
   .hero-visual { grid-column: 1; grid-row: 3; justify-self: start; }
   .hero-title { grid-row: 2; }
