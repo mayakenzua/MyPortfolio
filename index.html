@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Portfolio with a grunge aesthetic.">
+  <title>May Igbinakenzua | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="site-header" id="top">
+    <a href="#top" class="logo" aria-label="Home">
+      <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true">
+        <path d="M20 2 L38 20 L20 38 L2 20 Z" fill="none" stroke="currentColor" stroke-width="3"/>
+        <path d="M20 12 L28 20 L20 28 L12 20 Z" fill="currentColor"/>
+      </svg>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+    <nav id="nav" class="nav">
+      <a href="#top"><b>01</b> Home</a>
+      <a href="#works"><b>02</b> Works</a>
+      <a href="#about"><b>03</b> About</a>
+      <a href="#contact"><b>04</b> Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-intro">
+        <p>Hey there! I craft loud, unapologetic designs that help small businesses stand out in a crowded market.</p>
+        <a href="#contact" class="btn">Available for work <span>&rarr;</span></a>
+      </div>
+
+      <h1 class="hero-title" aria-label="May Igbinakenzua">
+        <span data-text="May">May</span>
+        <span data-text="Igbinakenzua">Igbinakenzua</span>
+      </h1>
+
+      <div class="hero-visual">
+        <div class="barcode" aria-hidden="true"></div>
+        <figure class="photo photo-a" role="img" aria-label="Portrait placeholder">
+          <div class="silhouette"></div>
+          <span class="tape tape-l"></span><span class="tape tape-r"></span>
+          <figcaption>FIG. 01 — SELF PORTRAIT</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Web Design ✕ Branding ✕ Product Design ✕ UI/UX ✕ Art Direction ✕ </span>
+        <span>Web Design ✕ Branding ✕ Product Design ✕ UI/UX ✕ Art Direction ✕ </span>
+      </div>
+    </div>
+
+    <!-- WORKS -->
+    <section class="section" id="works">
+      <h2 class="section-title reveal">Featured Works</h2>
+      <ul class="works">
+        <li class="work reveal">
+          <a href="#" data-hue="12">
+            <span class="work-cat">UI/UX Design</span>
+            <span class="work-name">Cloudsync Suite</span>
+            <span class="work-client">Cloudsync Technologies</span>
+            <span class="work-arrow">&nearr;</span>
+            <span class="work-preview" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li class="work reveal">
+          <a href="#" data-hue="48">
+            <span class="work-cat">Web Design</span>
+            <span class="work-name">Lumina E-commerce</span>
+            <span class="work-client">Lumina</span>
+            <span class="work-arrow">&nearr;</span>
+            <span class="work-preview" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li class="work reveal">
+          <a href="#" data-hue="200">
+            <span class="work-cat">Art Direction</span>
+            <span class="work-name">Nourish Restaurant</span>
+            <span class="work-client">Nourish Group</span>
+            <span class="work-arrow">&nearr;</span>
+            <span class="work-preview" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li class="work reveal">
+          <a href="#" data-hue="320">
+            <span class="work-cat">Product Design</span>
+            <span class="work-name">Harmony Smart Speaker</span>
+            <span class="work-client">Harmony Audio</span>
+            <span class="work-arrow">&nearr;</span>
+            <span class="work-preview" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="btn btn-light">All Works <span>&rarr;</span></a>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section-paper" id="services">
+      <h2 class="section-title reveal">Services</h2>
+      <ol class="services">
+        <li class="reveal">
+          <h3>Web Design</h3>
+          <p>Digital experiences that engage users, tell your brand story and drive conversions on every device.</p>
+        </li>
+        <li class="reveal">
+          <h3>Product Design</h3>
+          <p>From first sketches to manufacturing-ready prototypes, balancing form and function so products resonate.</p>
+        </li>
+        <li class="reveal">
+          <h3>Data Analysis</h3>
+          <p>Transforming raw data into actionable insights that inform strategic decisions and drive business growth.</p>
+        </li>
+        <li class="reveal">
+          <h3>UI/UX Research</h3>
+          <p>Research-driven, user-centered interfaces that solve real problems and feel great to use.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-text">
+        <h2 class="section-title reveal">About</h2>
+        <p class="lead reveal">I'm a creative problem-solver working where design, strategy and human behavior collide.</p>
+        <p class="reveal">With a passion for intuitive, delightful user experiences, I help brands and startups turn complex challenges into elegant solutions with real impact.</p>
+        <p class="reveal">Off the clock, you'll find me going on adventures with friends, shooting amateur iphone photography, or buried in fiction novels. The best design starts with understanding people.</p>
+        <a href="#" class="btn btn-light reveal">More about me <span>&rarr;</span></a>
+      </div>
+      <div class="hero-visual about-visual">
+        <div class="barcode" aria-hidden="true"></div>
+        <figure class="photo photo-b" role="img" aria-label="Second portrait placeholder">
+          <div class="silhouette alt"></div>
+          <span class="tape tape-l"></span><span class="tape tape-r"></span>
+          <figcaption>FIG. 02 — IN THE STUDIO</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-paper" id="faq">
+      <h2 class="section-title reveal">FAQ</h2>
+      <div class="faq">
+        <details class="reveal" open>
+          <summary><b>01</b> What's your typical project timeline?</summary>
+          <p>It depends on scope. A simple brand identity can take 3–4 weeks, while a full web or app project typically runs 6–12 weeks.</p>
+        </details>
+        <details class="reveal">
+          <summary><b>02</b> How do you structure your pricing?</summary>
+          <p>Project-based or hourly, depending on the work. Most clients prefer fixed rates for predictable budgets. A 50% deposit starts the work; the rest is due on completion.</p>
+        </details>
+        <details class="reveal">
+          <summary><b>03</b> What's included in your design process?</summary>
+          <p>Discovery and strategy, research and concepts, design exploration, revisions from your feedback, and final delivery of all assets.</p>
+        </details>
+        <details class="reveal">
+          <summary><b>04</b> Do you work with clients remotely?</summary>
+          <p>Absolutely. I work with clients worldwide using video calls for key meetings and collaborative design tools for feedback.</p>
+        </details>
+        <details class="reveal">
+          <summary><b>05</b> How many revisions are included?</summary>
+          <p>Most projects include 2–3 rounds of revisions. Consolidated feedback makes each round count.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2 class="section-title reveal">Contact</h2>
+      <form class="contact-form reveal" novalidate>
+        <label>Name
+          <input type="text" name="name" placeholder="May Igbinakenzua" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" placeholder="mayakenzua@gmail.com" required>
+        </label>
+        <label>Project
+          <select name="type">
+            <option>Web Design</option>
+            <option>Product Design</option>
+            <option>Data Analysis</option>
+            <option>UI/UX Research</option>
+          </select>
+        </label>
+        <label class="full">Message
+          <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send message <span>&rarr;</span></button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <h4>Socials</h4>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">X / Twitter</a></li>
+          <li><a href="#">Github</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="barcode" aria-hidden="true"></div>
+    </div>
+    <p class="footer-bottom">May Igbinakenzua © <span id="year">2026</span> — All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
