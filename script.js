@@ -2,6 +2,33 @@
   const $ = (s, c = document) => c.querySelector(s);
   const $$ = (s, c = document) => [...c.querySelectorAll(s)];
 
+  
+// "I provide ..." typing animation
+  const typed = $('.typed');
+  if (typed) {
+    const words = typed.dataset.words.split('|');   // phrases come from data-words in the HTML
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      typed.textContent = words[0];                 // no animation for people who opt out of motion
+    } else {
+      let w = 0;            // which phrase we're on
+      let c = 0;            // how many characters are showing
+      let deleting = false; // typing forward or erasing?
+      const tick = () => {
+        const word = words[w];
+        c += deleting ? -1 : 1;
+        typed.textContent = word.slice(0, c);
+        let delay = deleting ? 40 : 90;             // erasing is faster than typing
+        if (!deleting && c === word.length) {       // finished typing: pause, then start erasing
+          deleting = true; delay = 1600;
+        } else if (deleting && c === 0) {           // finished erasing: move to the next phrase
+          deleting = false; w = (w + 1) % words.length; delay = 400;
+        }
+        setTimeout(tick, delay);
+      };
+      tick();
+    }
+  }
+
   // Footer year
   $('#year').textContent = new Date().getFullYear();
 

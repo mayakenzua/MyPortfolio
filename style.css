@@ -185,6 +185,21 @@ img, svg { display: block; max-width: 100%; }
   text-transform: uppercase;
 }
 
+/* "I provide ..." typing line (sits just under a section title) */
+.provide {
+  margin: -2rem 0 3.5rem;                  /* pulls it up under the title's 3rem bottom margin */
+  min-height: 1.6em;                       /* reserves space so the page doesn't jump while typing */
+  font: 700 clamp(1.1rem, 4vw, 1.9rem)/1.4 var(--mono); /* font size scales with viewport width */
+}
+.typed { color: var(--accent); }           /* the changing phrase */
+.caret {                                   /* blinking cursor after the phrase */
+  display: inline-block; width: .12em; height: 1em;
+  margin-left: .12em; vertical-align: -.12em;
+  background: currentColor;
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
 /* Works */
 .works { margin-bottom: 3rem; border-top: 1px solid var(--line); }
 .work { border-bottom: 1px solid var(--line); }
